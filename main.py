@@ -5,6 +5,8 @@ import os
 from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # <-- Diese Zeile fügt CORS-Freigabe hinzu
+
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwUKaBRfIl4DXS3ikmdDbKD3QV_OlkYYeRYOJwPnESdvpNuLON-jwx0hzkG3RA3_L972Q/exec"
