@@ -42,7 +42,7 @@ def track():
 
     try:
         chat = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo-0613",  # oder gpt-4-0613 wenn verfügbar
+            model="gpt-4o",      # ✅ neu,  # oder gpt-4-0613 wenn verfügbar
             messages=[{"role": "user", "content": user_input}],
             functions=functions,
             function_call="auto"
