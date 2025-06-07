@@ -9,7 +9,8 @@ app = Flask(__name__)
 CORS(app)
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwUKaBRfIl4DXS3ikmdDbKD3QV_OlkYYeRYOJwPnESdvpNuLON-jwx0hzkG3RA3_L972Q/exec"
+WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxWKBxrQoHH4_cYt64DRmYm7jEhxfPLr9CCLX3D_Xvdthha0EUZmXSTDnEZHDV1xIRruw/exec"
+
 openai.api_key = OPENAI_API_KEY
 
 functions = [
